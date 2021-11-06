@@ -30,8 +30,8 @@ function toggleModal() {
 function authSubmit(e) {
   e.preventDefault();
   const user = {
-    login: inputLogin.value,
-    password: inputPassword.value
+    login: inputLogin.value.trim(),
+    password: inputPassword.value.trim()
   };
   
   const valid = validationForm(user);
@@ -62,6 +62,7 @@ function login(user) {
   console.log('user: ', user);
   btnAuth.style.display = `none`;
   btnOut.style.display = `flex`;
+  
   userName.textContent = user.login;
   userName.style.display = `flex`;
 }
@@ -79,4 +80,4 @@ if (savedUser) {
 }
 
 
-// git add . && git commit -m "1 lesson 2 part" && git push -u origin master
+// git add . && git commit -m "2 lesson" && git push -u origin master

@@ -8,6 +8,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="./js/auth.js" type="module"></script>
+	<script src="./js/partners.js" type="module"></script>
+	<script src="./js/menu.js" type="module"></script>
+	<script src="./js/data.js" type="module"></script>
 </head>
 
 <body>
@@ -301,10 +305,12 @@
 					<label class="label-auth">
 						<span>Логин</span>
 						<input id="login" type="text">
+						<span class="error error-login"></span>
 					</label>
 					<label class="label-auth">
 						<span>Пароль</span>
 						<input id="password" type="password">
+						<span class="error error-password"></span>
 					</label>
 				</fieldset>
 				<!-- /.modal-body -->
